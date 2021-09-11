@@ -1,0 +1,36 @@
+*{ /* *은 모든 것을 뜻함 */
+    margin : 0;
+    padding : 0;
+}
+body { 
+    width : 100vw;
+    height : 100vh;
+    background-color : #F5D042;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    /* 이거 center 지정 엄청 좋은 듯*/
+}
+
+div { 
+    width: 400px;
+    height: 400px;
+    overflow : hidden;
+    border-radius : 10%;
+    border : 1px solid black;
+
+    transition : all 1.5s;
+    /* 이거 대박 중요 */
+    /* all 은 모든 요소에 대해서 자연스로운 요소를 주어라 */
+}
+
+img { /* 여기서 img 를 100% height : 100% 를 해주었기 때문에 그래서 img 크기가 맞게 된 것 div에 */
+    width : 100%; 
+    height : 100%;
+}
+
+div:hover {
+    border-radius : 50%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
