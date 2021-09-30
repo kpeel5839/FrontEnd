@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width:100vw;
+    height:100vh;
+    background-color:beige;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.title{
+    font-size:100px;
+    transition:all 0.3s;
+}
+.btn-wrapper{
+    display:flex;
+    gap:24px;
+}
+.btn{
+    all:unset;
+    width:54px;
+    height:26px;
+    text-align:center;
+    background-color:burlywood;
+    border-radius:12px;
+    transition:all 0.3s; /*transition 이 약간 많이 고급스럽게 만들어줌*/
+}
+.btn:hover{
+    transform:scale(1.1); /* 자신의 1.1배가 된다는 것*/
+    background-color: coral;
+}
+/*ux = 사용자 경험*/
+.btn:active{ /*active 는 눌렀을 때*/ 
+    transform:scale(0.9);
+    color:white;
+}
+.even{
+    color: red;
+    font-size:200px;
+}
